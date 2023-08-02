@@ -32,6 +32,10 @@ public class ProductController {
     public String welcome() {
         return "Welcome this endpoint is not secure";
     }
+    @GetMapping("/india")
+    public String india() {
+        return "Welcome this endpoint is not secure";
+    }
 
     @PostMapping("/new")
     public String addNewUser(@RequestBody UserInfo userInfo) {
